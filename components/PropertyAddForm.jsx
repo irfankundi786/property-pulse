@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 
 const PropertyAddForm = () => {
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState(true);
   const [fields, setFields] = useState({
     type: '',
     name: '',
@@ -32,6 +32,7 @@ const PropertyAddForm = () => {
 
   useEffect(() => {
     setMounted(true);
+    console.log('ismounted = ' + mounted);
   }, []);
 
   const handleChange = (e) => {
