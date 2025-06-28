@@ -18,11 +18,35 @@ const MainLayout = ({ children }) => {
     <GlobalProvider>
       <AuthProvider>
         <html lang='en'>
+          <head>
+            <script
+              src='https://cdn.botpress.cloud/webchat/v3.0/inject.js'
+              defer
+            ></script>
+            <script
+              src='https://files.bpcontent.cloud/2024/12/09/05/20241209050719-K65NM8FK.js'
+              defer
+            ></script>
+          </head>
           <body>
             <Navbar />
             <main>{children}</main>
             <Footer />
             <ToastContainer />
+
+            <script
+              src='https://cdn.botpress.cloud/webchat/v3.0/inject.js'
+              defer
+            ></script>
+
+            <script
+              src='https://cdn.botpress.cloud/webchat/v3.0/inject.js'
+              defer
+            ></script>
+            <script
+              src='https://files.bpcontent.cloud/2024/12/09/05/20241209050719-K65NM8FK.js'
+              defer
+            ></script>
           </body>
         </html>
       </AuthProvider>
